@@ -36,10 +36,6 @@ pipeline {
     environment {
         appName = 'full-architecture'
 
-        KEY_PASSWORD = credentials('keyPassword')
-        KEY_ALIAS = credentials('keyAlias')
-        KEYSTORE = credentials('keystore')
-        STORE_PASSWORD = credentials('storePassword')
     }
     stages {
         stage('Run Tests') {
